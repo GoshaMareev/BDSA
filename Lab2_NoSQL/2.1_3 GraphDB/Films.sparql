@@ -1,0 +1,86 @@
+#Фильмы снятые до 1970 года
+PREFIX imdb: <http://academy.ontotext.com/imdb/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?movie ?name ?year
+WHERE {
+  ?movie a ?type ;
+         schema:name ?name ;
+         schema:year ?year .
+
+  FILTER(?year < 1970)
+}
+ORDER BY ?year
+
+
+# 2.Напишите запрос для получения всех фильмов с рейтингом 7 и выше.
+
+
+PREFIX imdb: <http://academy.ontotext.com/imdb/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?movie ?name ?rating
+WHERE {
+  ?movie schema:name ?name ;
+         schema:rating ?rating .
+  FILTER(?rating >= 7)
+}
+ORDER BY DESC(?rating)
+
+#3. Найдите все фильмы, в которых снимались два актера: "Scarlett Johansson" и "Chris Evans".
+PREFIX imdb: <http://academy.ontotext.com/imdb/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?movie ?title
+WHERE {
+  ?scarlett schema:name "Scarlett Johansson" .
+  ?chris schema:name "Chris Evans" .
+    
+  ?movie a ?type ;
+         schema:name ?title ;
+         schema:actor ?scarlett , ?chris .
+  
+  FILTER(?type IN (imdb:ColorMovie, imdb:BlackandWhiteMovie))
+}
+
+#4 Все фильмы, снятые в жанре триллер
+PREFIX imdb: <http://academy.ontotext.com/imdb/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?movie ?title
+WHERE {
+  ?movie a ?type ;
+         schema:name ?title ;
+         schema:genre "Thriller" .
+ 
+}
+
+
+SELECT ?movie ?title
+WHERE {
+  ?movie a ?type ;
+         schema:name ?title ;
+         schema:genre "Thriller" .
+  
+  FILTER(?type IN (imdb:ColorMovie, imdb:BlackandWhiteMovie))
+}
+
+
+
+#5 Все фильмы и их жанры, отсортированные по стране производства.
+PREFIX imdb: <http://academy.ontotext.com/imdb/>
+PREFIX schema: <http://schema.org/>
+
+SELECT ?countryName ?movieTitle (GROUP_CONCAT(DISTINCT ?genre; SEPARATOR=", ") AS ?genres)
+WHERE {
+  ?movie a ?type ;
+         schema:name ?movieTitle ;
+         schema:genre ?genre ;
+         schema:countryOfOrigin ?country .
+  
+  ?country schema:name ?countryName .
+  
+  FILTER(?type IN (imdb:ColorMovie, imdb:BlackandWhiteMovie))
+}
+GROUP BY ?countryName ?movieTitle
+ORDER BY ?countryName ?movieTitle
