@@ -1,0 +1,1836 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "keyspace_name": "string",
+                      "durable_writes": "string",
+                      "replication": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744058840075_965985497",
+      "id": "paragraph_1744058840075_965985497",
+      "dateCreated": "2025-04-07T20:47:20+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:13674",
+      "text": "SELECT * FROM system_schema.keyspaces;",
+      "dateUpdated": "2025-04-08T10:02:05+0000",
+      "dateFinished": "2025-04-08T10:02:04+0000",
+      "dateStarted": "2025-04-08T10:01:57+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "keyspace_name\tdurable_writes\treplication\nsystem_auth\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 1}\nsystem_schema\ttrue\t{class: org.apache.cassandra.locator.LocalStrategy}\nsystem_distributed\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 3}\nsystem\ttrue\t{class: org.apache.cassandra.locator.LocalStrategy}\nsystem_traces\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 2}\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744109144464_1308985107",
+      "id": "paragraph_1744109144464_1308985107",
+      "dateCreated": "2025-04-08T10:45:44+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:14413"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744109184947_1367572476",
+      "id": "paragraph_1744109184947_1367572476",
+      "dateCreated": "2025-04-08T10:46:24+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14587",
+      "text": "CREATE KEYSPACE movies WITH replication = {'class': 'SimpleStrategy',\r\n'replication_factor': '1'} AND durable_writes = true;",
+      "dateUpdated": "2025-04-08T10:56:09+0000",
+      "dateFinished": "2025-04-08T10:56:10+0000",
+      "dateStarted": "2025-04-08T10:56:09+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#8aebfe5b-c0e7-4b11-be20-b34838e20861\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"8aebfe5b-c0e7-4b11-be20-b34838e20861\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE KEYSPACE movies WITH replication = {'class': 'SimpleStrategy',\r\n'replication_factor': '1'} AND durable_writes = true;</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744109167280_143375886",
+      "id": "paragraph_1744109167280_143375886",
+      "dateCreated": "2025-04-08T10:46:07+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14506",
+      "text": "DESCRIBE KEYSPACE movies;",
+      "dateUpdated": "2025-04-08T10:57:51+0000",
+      "dateFinished": "2025-04-08T10:57:51+0000",
+      "dateStarted": "2025-04-08T10:57:51+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n<br/>\n<br/>\n<nav class=\"navbar navbar-default\">\n    <ul class=\"nav navbar-nav\">\n        \n\n<li role=\"presentation\" class=\"dropdown\">\n    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n        <span class=\"text-danger\"><span class=\"glyphicon glyphicon-folder-open\"></span>&nbsp;&nbsp;<strong>movies</strong></span>\n        <span class=\"text-danger caret\"></span>\n        <ul class=\"dropdown-menu\">\n            \n            \n            \n            \n                    </ul>\n    </a>\n</li>\n        <li>\n            <a><strong>DESCRIBE KEYSPACE movies;</strong></a>\n        </li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                <strong>Legend</strong>\n                <span class=\"caret\"></span>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-dashboard text-muted\" aria-hidden=\"true\" ></span>&nbsp;Cluster\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-folder-open text-danger\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Keyspace\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-copyright-mark text-warning\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;UDT\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-th-list text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Table\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-eye-open text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Materialized View\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-random text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Function\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-retweet text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Aggregate\n                    </a>\n                </li>\n                <li role=\"separator\" class=\"divider text-muted\"></li>\n                <li class=\"dropdown-header\"><span class=\"text-primary\">Table icons</span></li>\n                <li class=\"bg-info\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-fullscreen\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Partition Key\n                    </a>\n                </li>\n                <li class=\"bg-warning\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Static Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order ASC\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes-alt\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order DESC\n                    </a>\n                </li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#\"></a>\n        </li>\n    </ul>\n</nav>\n<hr/>\n\n<div class=\"container\">\n    <!-- Keyspace -->\n    \n\n\n<div class=\"row\">\n    <div class=\"col-md-2\"></div>\n    <div class=\"col-md-8 col-offset-md-2\">\n        <div class=\"panel panel-default table-responsive table-bordered\">\n            <table class=\"table\">\n                \n                <caption>\n                    <h4 class=\"text-danger\">\n                        <span class=\"glyphicon glyphicon-folder-open\"></span>&nbsp;&nbsp;movies\n                    </h4>\n                </caption>\n                                <thead>\n                <tr>\n                    <th class=\"col-md-10\" style=\"text-align:left\">Replication</th>\n                    <th class=\"col-md-2\" style=\"text-align:left\">Durable Writes</th>\n                </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td class=\"col-md-10\" style=\"text-align:left\">{'class' : 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor' : '1'}</td>\n                        <td class=\"col-md-2\" style=\"text-align:left\">true</td>\n                    </tr>\n                <tbody>\n            </table>\n            <div class=\"panel-footer\">\n                <a data-toggle=\"collapse\" data-target=\"#50c24a70-1468-11f0-a67f-2903bc18f558_asCQL\" class=\"text-danger\">\n                    <strong>As CQL statement</strong>\n                    <span class=\"caret\"></span>\n                </a>\n                <br/><br/>\n                <div class=\"collapse\" id=\"50c24a70-1468-11f0-a67f-2903bc18f558_asCQL\">\n                    <pre class=\"well\">CREATE KEYSPACE movies WITH replication = { \n\t'class' : 'org.apache.cassandra.locator.SimpleStrategy', \n\t'replication_factor': '1' } AND durable_writes = true;</pre>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-2\"></div>\n</div>\n\n    <!-- Tables -->\n    <div class=\"row\"></div>\n    \n    \n    \n    \n    \n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "keyspace_name": "string",
+                      "durable_writes": "string",
+                      "replication": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744109239895_290239153",
+      "id": "paragraph_1744109239895_290239153",
+      "dateCreated": "2025-04-08T10:47:19+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14701",
+      "text": "SELECT * FROM system_schema.keyspaces;",
+      "dateUpdated": "2025-04-08T10:56:25+0000",
+      "dateFinished": "2025-04-08T10:56:25+0000",
+      "dateStarted": "2025-04-08T10:56:25+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "keyspace_name\tdurable_writes\treplication\nsystem_auth\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 1}\nsystem_schema\ttrue\t{class: org.apache.cassandra.locator.LocalStrategy}\nmovies\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 1}\nsystem_distributed\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 3}\nsystem\ttrue\t{class: org.apache.cassandra.locator.LocalStrategy}\nsystem_traces\ttrue\t{class: org.apache.cassandra.locator.SimpleStrategy, replication_factor: 2}\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744109264009_1127605553",
+      "id": "paragraph_1744109264009_1127605553",
+      "dateCreated": "2025-04-08T10:47:44+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:14798",
+      "text": "DROP TABLE IF EXISTS movies.movie;\r\nCREATE TABLE movies.movie (movie_id int,\r\n\ttitle text,\t\t\t\t// title\r\n\trelease_year int,\t\t// year\r\n\trunning_time int, \t\t// runtimes\r\n\tlanguages set<text>, \t// language codes\r\n\tgenres set<text>,      \t// genres\r\n\tplot_outline text,    \t// plot outline\r\n   cover_url text, \t\t\t// cover url\r\n   top250_rank int,\t\t\t// top 250 rank\r\n   PRIMARY KEY (movie_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:01:22+0000",
+      "dateFinished": "2025-04-08T11:01:23+0000",
+      "dateStarted": "2025-04-08T11:01:22+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#1701a8ed-1d8d-4a7e-aec5-87657bbc3494\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"1701a8ed-1d8d-4a7e-aec5-87657bbc3494\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.movie (movie_id int,\r\n\ttitle text,\t\t\t\t// title\r\n\trelease_year int,\t\t// year\r\n\trunning_time int, \t\t// runtimes\r\n\tlanguages set&lt;text&gt;, \t// language codes\r\n\tgenres set&lt;text&gt;,      \t// genres\r\n\tplot_outline text,    \t// plot outline\r\n   cover_url text, \t\t\t// cover url\r\n   top250_rank int,\t\t\t// top 250 rank\r\n   PRIMARY KEY (movie_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110082381_2032539197",
+      "id": "paragraph_1744110082381_2032539197",
+      "dateCreated": "2025-04-08T11:01:22+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16203",
+      "text": "DROP TABLE IF EXISTS movies.actor;\r\nCREATE TABLE movies.actor (actor_id int,\r\n  name text,\t\t\t\t\t// name\r\n  headshot_url text,\t\t// headshot\r\n  mini_biography text,\t\t// mini biography\r\n  birth_date text,\t\t\t// birth date\r\n  trade_mark list<text>,\t// trade mark\r\n  PRIMARY KEY (actor_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:02:42+0000",
+      "dateFinished": "2025-04-08T11:02:44+0000",
+      "dateStarted": "2025-04-08T11:02:42+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#25a9edf9-6933-4856-b3c6-56a4708cf36f\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"25a9edf9-6933-4856-b3c6-56a4708cf36f\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.actor (actor_id int,\r\n  name text,\t\t\t\t\t// name\r\n  headshot_url text,\t\t// headshot\r\n  mini_biography text,\t\t// mini biography\r\n  birth_date text,\t\t\t// birth date\r\n  trade_mark list&lt;text&gt;,\t// trade mark\r\n  PRIMARY KEY (actor_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110200422_334526247",
+      "id": "paragraph_1744110200422_334526247",
+      "dateCreated": "2025-04-08T11:03:20+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16386",
+      "text": "DESCRIBE TABLE movie;\r\n",
+      "dateUpdated": "2025-04-08T11:03:38+0000",
+      "dateFinished": "2025-04-08T11:03:38+0000",
+      "dateStarted": "2025-04-08T11:03:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n<br/>\n<br/>\n<nav class=\"navbar navbar-default\">\n    <ul class=\"nav navbar-nav\">\n        \n        <li>\n            <a><strong>DESCRIBE TABLE movie;</strong></a>\n        </li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                <strong>Legend</strong>\n                <span class=\"caret\"></span>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-dashboard text-muted\" aria-hidden=\"true\" ></span>&nbsp;Cluster\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-folder-open text-danger\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Keyspace\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-copyright-mark text-warning\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;UDT\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-th-list text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Table\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-eye-open text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Materialized View\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-random text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Function\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-retweet text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Aggregate\n                    </a>\n                </li>\n                <li role=\"separator\" class=\"divider text-muted\"></li>\n                <li class=\"dropdown-header\"><span class=\"text-primary\">Table icons</span></li>\n                <li class=\"bg-info\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-fullscreen\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Partition Key\n                    </a>\n                </li>\n                <li class=\"bg-warning\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Static Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order ASC\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes-alt\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order DESC\n                    </a>\n                </li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#\"></a>\n        </li>\n    </ul>\n</nav>\n<hr/>\n\n<div class=\"row\">\n    <div class=\"col-md-2\"></div>\n    <div class=\"col-md-8 col-offset-md-2\">\n        <div class=\"panel panel-default table-responsive table-bordered\">\n            <table class=\"table\">\n                \n                <caption><h4 class=\"text-primary\"><span class=\"glyphicon glyphicon-th-list\"></span>&nbsp;movie</h4></caption>\n                                <thead>\n                    <tr>\n                        <th class=\"col-md-4\" width=\"10%\">Column Type</th>\n                        <th class=\"col-md-4\">Column Name</th>\n                        <th class=\"col-md-4\" style=\"text-align:left\">Data Type</th>\n                    </tr>\n                </thead>\n                <tbody>\n                                            \n\n                    <tr class=\"info\">\n                        <td class=\"col-md-4\" width=\"10%\">\n                            <span class=\"glyphicon glyphicon-fullscreen\" title=\"Partition Key\"></span>\n                        </td>\n                        <td class=\"col-md-4\">movie_id</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">int</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">cover_url</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">genres</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">set&lt;text&gt;</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">languages</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">set&lt;text&gt;</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">plot_outline</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">release_year</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">int</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">running_time</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">int</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">title</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">top250_rank</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">int</td>\n                    </tr>\n                                                            </tbody>\n            </table>\n            <div class=\"panel-footer\">\n                <a data-toggle=\"collapse\" data-target=\"#1fada280-1469-11f0-a67f-2903bc18f558_asCQL\" class=\"text-primary\">\n                    <strong>As CQL statement</strong>\n                    <span class=\"caret\"></span>\n                </a>\n                <br/><br/>\n                <div class=\"collapse\" id=\"1fada280-1469-11f0-a67f-2903bc18f558_asCQL\">\n                    <pre class=\"well\">CREATE TABLE movies.movie (\n    movie_id int,\n    cover_url text,\n    genres set&lt;text&gt;,\n    languages set&lt;text&gt;,\n    plot_outline text,\n    release_year int,\n    running_time int,\n    title text,\n    top250_rank int,\n    PRIMARY KEY (movie_id)\n) WITH bloom_filter_fp_chance = 0.01\n    AND caching = {'keys':'ALL','rows_per_partition':'NONE'}\n    AND comment = ''\n    AND compaction = {'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy','max_threshold':'32','min_threshold':'4'}\n    AND compression = {'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}\n    AND crc_check_chance = 1.0\n    AND dclocal_read_repair_chance = 0.1\n    AND default_time_to_live = 0\n    AND extensions = {}\n    AND gc_grace_seconds = 864000\n    AND max_index_interval = 2048\n    AND memtable_flush_period_in_ms = 0\n    AND min_index_interval = 128\n    AND read_repair_chance = 0.0\n    AND speculative_retry = '99PERCENTILE';</pre>\n                </div>\n            </div>\n        </div>\n            </div>\n    <div class=\"col-md-2\"></div>\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110218380_2041666202",
+      "id": "paragraph_1744110218380_2041666202",
+      "dateCreated": "2025-04-08T11:03:38+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16476",
+      "text": "DESCRIBE TABLE actor;",
+      "dateUpdated": "2025-04-08T11:03:44+0000",
+      "dateFinished": "2025-04-08T11:03:44+0000",
+      "dateStarted": "2025-04-08T11:03:44+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n<br/>\n<br/>\n<nav class=\"navbar navbar-default\">\n    <ul class=\"nav navbar-nav\">\n        \n        <li>\n            <a><strong>DESCRIBE TABLE actor;</strong></a>\n        </li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                <strong>Legend</strong>\n                <span class=\"caret\"></span>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-dashboard text-muted\" aria-hidden=\"true\" ></span>&nbsp;Cluster\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-folder-open text-danger\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Keyspace\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-copyright-mark text-warning\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;UDT\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-th-list text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Table\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-eye-open text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Materialized View\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-random text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Function\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-retweet text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Aggregate\n                    </a>\n                </li>\n                <li role=\"separator\" class=\"divider text-muted\"></li>\n                <li class=\"dropdown-header\"><span class=\"text-primary\">Table icons</span></li>\n                <li class=\"bg-info\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-fullscreen\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Partition Key\n                    </a>\n                </li>\n                <li class=\"bg-warning\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Static Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order ASC\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes-alt\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order DESC\n                    </a>\n                </li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#\"></a>\n        </li>\n    </ul>\n</nav>\n<hr/>\n\n<div class=\"row\">\n    <div class=\"col-md-2\"></div>\n    <div class=\"col-md-8 col-offset-md-2\">\n        <div class=\"panel panel-default table-responsive table-bordered\">\n            <table class=\"table\">\n                \n                <caption><h4 class=\"text-primary\"><span class=\"glyphicon glyphicon-th-list\"></span>&nbsp;actor</h4></caption>\n                                <thead>\n                    <tr>\n                        <th class=\"col-md-4\" width=\"10%\">Column Type</th>\n                        <th class=\"col-md-4\">Column Name</th>\n                        <th class=\"col-md-4\" style=\"text-align:left\">Data Type</th>\n                    </tr>\n                </thead>\n                <tbody>\n                                            \n\n                    <tr class=\"info\">\n                        <td class=\"col-md-4\" width=\"10%\">\n                            <span class=\"glyphicon glyphicon-fullscreen\" title=\"Partition Key\"></span>\n                        </td>\n                        <td class=\"col-md-4\">actor_id</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">int</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">birth_date</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">headshot_url</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">mini_biography</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">name</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">text</td>\n                    </tr>\n                                                                    \n                    <tr>\n                        <td class=\"col-md-4\" width=\"10%\"></td>\n                        <td class=\"col-md-4\">trade_mark</td>\n                        <td class=\"col-md-4\" style=\"text-align:left\">list&lt;text&gt;</td>\n                    </tr>\n                                                            </tbody>\n            </table>\n            <div class=\"panel-footer\">\n                <a data-toggle=\"collapse\" data-target=\"#2383d7d0-1469-11f0-a67f-2903bc18f558_asCQL\" class=\"text-primary\">\n                    <strong>As CQL statement</strong>\n                    <span class=\"caret\"></span>\n                </a>\n                <br/><br/>\n                <div class=\"collapse\" id=\"2383d7d0-1469-11f0-a67f-2903bc18f558_asCQL\">\n                    <pre class=\"well\">CREATE TABLE movies.actor (\n    actor_id int,\n    birth_date text,\n    headshot_url text,\n    mini_biography text,\n    name text,\n    trade_mark list&lt;text&gt;,\n    PRIMARY KEY (actor_id)\n) WITH bloom_filter_fp_chance = 0.01\n    AND caching = {'keys':'ALL','rows_per_partition':'NONE'}\n    AND comment = ''\n    AND compaction = {'class':'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy','max_threshold':'32','min_threshold':'4'}\n    AND compression = {'chunk_length_in_kb':'64','class':'org.apache.cassandra.io.compress.LZ4Compressor'}\n    AND crc_check_chance = 1.0\n    AND dclocal_read_repair_chance = 0.1\n    AND default_time_to_live = 0\n    AND extensions = {}\n    AND gc_grace_seconds = 864000\n    AND max_index_interval = 2048\n    AND memtable_flush_period_in_ms = 0\n    AND min_index_interval = 128\n    AND read_repair_chance = 0.0\n    AND speculative_retry = '99PERCENTILE';</pre>\n                </div>\n            </div>\n        </div>\n            </div>\n    <div class=\"col-md-2\"></div>\n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110224831_153558832",
+      "id": "paragraph_1744110224831_153558832",
+      "dateCreated": "2025-04-08T11:03:44+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16563",
+      "text": "// insert \"The Matrix\" - 0133093\r\nINSERT INTO movies.movie (movie_id, title, release_year, running_time, languages,\r\n                   genres, plot_outline, cover_url, top250_rank)\r\nVALUES (0133093,\r\n        'The Matrix',\r\n \t\t1999,\r\n \t\t136,\r\n      {'en'},\r\n      {'Action', 'Sci-Fi'},\r\n      $$Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion$$,\r\n      'https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX101_CR0,0,101,150_.jpg',\r\n      19);\r\n\r\n// insert \"Pulp Fiction\" - 0110912\r\nINSERT INTO movies.movie (movie_id, title, release_year, running_time, languages,\r\n                   genres, plot_outline, cover_url, top250_rank)\r\nVALUES (0110912,\r\n \t\t'Pulp Fiction',\r\n \t\t1994,\r\n \t\t154,\r\n \t\t{'en', 'es', 'fr'},\r\n \t\t{'Crime', 'Drama'},\r\n \t\t$$Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two hit men who are out to retrieve a suitcase stolen from their employer, mob boss Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia (Uma Thurman) out a few days later when Wallace himself will be out of town. Butch Coolidge (Bruce Willis) is an aging boxer who is paid by Wallace to lose his fight. The lives of these seemingly unrelated people are woven together comprising of a series of funny, bizarre and uncalled-for incidents.$$,\r\n \t\t'https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY150_CR1,0,101,150_.jpg',\r\n \t\t8);\r\n\r\n// insert \"Speed\" - 0111257\r\nINSERT INTO movies.movie (movie_id, title, release_year, running_time, languages,\r\n                   genres, plot_outline, cover_url, top250_rank)\r\nVALUES (0111257,\r\n\t\t 'Speed',\r\n\t\t 1994,\r\n\t\t 116,\r\n\t\t {'en'},\r\n\t\t {'Action', 'Adventure', 'Crime', 'Thriller'},\r\n\t\t $$Bomber extortionist's elevator plan backfires, so he rigs a bomb to a LA city bus. The stipulation is: once armed, the bus must stay above 50 mph to keep from exploding. Also if LAPD Officer tries to unload any passengers off, Payne will detonate it. Joe Morton co-stars as Jack's superior, and Jeff Daniels supports Jack helping him try to defuse the bomb.$$,\r\n\t\t 'https://m.media-amazon.com/images/M/MV5BYjc0MjYyN2EtZGRhMy00NzJiLWI2Y2QtYzhiYTU3NzAxNzg4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY150_CR0,0,101,150_.jpg',\r\n\t\t  null); \t\t",
+      "dateUpdated": "2025-04-08T11:05:47+0000",
+      "dateFinished": "2025-04-08T11:05:47+0000",
+      "dateStarted": "2025-04-08T11:05:47+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#238f6af1-2721-4022-9977-0c44c2cc70bc\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"238f6af1-2721-4022-9977-0c44c2cc70bc\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">INSERT INTO movies.movie (movie_id, title, release_year, running_time, languages,\r\n                   genres, plot_outline, cover_url, top250_rank)\r\nVALUES (0111257,\r\n\t\t 'Speed',\r\n\t\t 1994,\r\n\t\t 116,\r\n\t\t {'en'},\r\n\t\t {'Action', 'Adventure', 'Crime', 'Thriller'},\r\n\t\t $$Bomber extortionist's elevator plan backfires, so he rigs a bomb to a LA city bus. The stipulation is: once armed, the bus must stay above 50 mph to keep from exploding. Also if LAPD Officer tries to unload any passengers off, Payne will detonate it. Joe Morton co-stars as Jack's superior, and Jeff Daniels supports Jack helping him try to defuse the bomb.$$,\r\n\t\t 'https://m.media-amazon.com/images/M/MV5BYjc0MjYyN2EtZGRhMy00NzJiLWI2Y2QtYzhiYTU3NzAxNzg4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY150_CR0,0,101,150_.jpg',\r\n\t\t  null);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110347232_1261548828",
+      "id": "paragraph_1744110347232_1261548828",
+      "dateCreated": "2025-04-08T11:05:47+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16644",
+      "text": "// insert \"Bruce Willis\" - 0000246\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000246,\r\n \t\t'Bruce Willis',\r\n \t\t'https://m.media-amazon.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_UY98_CR8,0,67,98_AL_.jpg',\r\n \t\t'1955-03-19',\r\n\t\t ['Frequently plays a man who suffered a tragedy, had lost something or had a  crisis of confidence or conscience.',\r\n\t\t  'Frequently plays likeable wisecracking heroes with a moral centre',\r\n\t\t  'Headlines action-adventures, often playing a policeman, hitman or someone in the military',\r\n\t\t  'Often plays men who get caught up in situations far beyond their control',\r\n\t\t  'Sardonic one-liners',\r\n\t\t  'Shaven head',\r\n\t\t  'Distinctive, gravelly voice',\r\n\t\t  'Smirky grin.',\r\n\t\t  'Known for playing cynical anti-heroes with unhappy personal lives']);\r\n\r\n// insert \"John Travolta\" - 0000237\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000237,\r\n\t\t 'John Travolta',\r\n\t\t 'https://m.media-amazon.com/images/M/MV5BMTUwNjQ0ODkxN15BMl5BanBnXkFtZTcwMDc5NjQwNw@@._V1_UY98_CR3,0,67,98_AL_.jpg',\r\n\t\t '1954-02-18',\r\n\t\t ['Cleft chin and razor-sharp cheekbones',\r\n\t\t  'Often works some sort of dance into his roles',\r\n\t\t  'New Jersey accent',\r\n\t\t  'Black hair and blue eyes']);\r\n\r\n\r\n// insert \"Sandra Bullock\" - 0000113\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000113,\r\n\t\t'Sandra Bullock',\r\n        'https://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UX67_CR0,0,67,98_AL_.jpg',\r\n        '1964-07-26',\r\n        null);\r\n\r\n// insert \"Samuel L. Jackson\" - 0000168\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000168,\r\n\t\t 'Samuel L. Jackson',\r\n\t\t 'https://m.media-amazon.com/images/M/MV5BMTQ1NTQwMTYxNl5BMl5BanBnXkFtZTYwMjA1MzY1._V1_UX67_CR0,0,67,98_AL_.jpg',\r\n\t\t '1948-12-21',\r\n\t\t ['Deep authoritative voice',\r\n\t\t  'Rebellious characters who are disliked or considered strange by others in the story',\r\n\t\t  'Often plays police officers or government officials. Both prone to intimidation or violence',\r\n\t\t  'Often plays very wise and intelligent characters with great capacities for violence',\r\n\t\t  'Frequently plays tough characters who swear a lot',\r\n\t\t  'Frequent swearing',\r\n\t\t  'Often sports a moustache or goatee in his films',\r\n\t\t  'Shaven head',\r\n\t\t  'Kangol hats',\r\n\t\t  'Often plays hotheaded characters with a fiery temper',\r\n\t\t  'Often shouts the word \"motherf*****\" at some point in a film',\r\n\t\t  'Frequently cast by Quentin Tarantino']);\r\n\r\n// insert \"Uma Thurman\" - 0000235\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000235,\r\n\t\t 'Uma Thurman',\r\n\t\t 'https://m.media-amazon.com/images/M/MV5BMjMxNzk1MTQyMl5BMl5BanBnXkFtZTgwMDIzMDEyMTE@._V1_UX67_CR0,0,67,98_AL_.jpg',\r\n\t\t '1970-04-29',\r\n\t\t ['Long blond hair and blue eyes', 'Statuesque, model-like figure']);\r\n\r\n// insert \"Keanu Reeves\" - 0000206\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000206,\r\n\t\t 'Keanu Reeves',\r\n \t\t 'https://m.media-amazon.com/images/M/MV5BNjUxNDcwMTg4Ml5BMl5BanBnXkFtZTcwMjU4NDYyOA@@._V1_UY98_CR4,0,67,98_AL_.jpg',\r\n \t\t '1964-09-02',\r\n\t\t ['Intense contemplative gaze',\r\n\t\t  'Deep husky voice',\r\n\t\t  'Known for playing stoic reserved characters']);\r\n\r\n// insert \"Quentin Tarantino\" - 0000233\r\nINSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000233,\r\n         'Quentin Tarantino',\r\n         'https://m.media-amazon.com/images/M/MV5BMTgyMjI3ODA3Nl5BMl5BanBnXkFtZTcwNzY2MDYxOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg',\r\n         '1963-03-27',\r\n         ['Lead characters usually drive General Motors vehicles, particularly Chevrolet and Cadillac, such as Jules 1974 Nova and Vincents 1960s Malibu.',\r\n          'Briefcases and suitcases play an important role in Pulp Fiction (1994), Reservoir Dogs (1992), Jackie Brown (1997), True Romance (1993) and Kill Bill: Vol. 2 (2004).',\r\n          'Makes references to cult movies and television',\r\n          'Frequently works with Harvey Keitel, Tim Roth, Michael Madsen, Uma Thurman, Michael Bowen, Samuel L. Jackson, Michael Parks and Christoph Waltz.',\r\n          'His films usually have a shot from inside an automobile trunk',\r\n          'He always has a Dutch element in his films: The opening tune, Little Green Bag, in Reservoir Dogs (1992) was performed by George Baker Selection and written by Jan Gerbrand Visser and Benjamino Bouwens who are all Dutch. The character Freddy Newandyke, played by Tim Roth is a direct translation to a typical Dutch last name, Nieuwendijk. The code name of Tim Roth is Mr. Orange, the royal color of Holland and the last name of the royal family. The Amsterdam conversation in Pulp Fiction (1994), Vincent Vega smokes from a Dutch tobacco shag (Drum), the mentioning of Rutger Hauer in Jackie Brown (1997), the brides name is Beatrix, the name of the Royal Dutch Queen.',\r\n\t\t  '[The Mexican Standoff] All his movies (including True Romance (1993), which he only wrote and did not direct) feature a scene in which three or more characters are pointing guns at each other at the same time.',\r\n         'Often uses an unconventional storytelling device in his films, such as retrospect (Reservoir Dogs (1992)), non-linear (Pulp Fiction (1994)), or \"chapter\" format (Kill Bill: Vol. 1 (2003)).',\r\n         'His films will often include one long, unbroken take where a character is  followed around somewhere.']);",
+      "dateUpdated": "2025-04-08T11:07:15+0000",
+      "dateFinished": "2025-04-08T11:07:15+0000",
+      "dateStarted": "2025-04-08T11:07:15+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#b0617f5d-3c3e-4ab4-818e-a4acc6e112e9\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"b0617f5d-3c3e-4ab4-818e-a4acc6e112e9\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">INSERT INTO movies.actor (actor_id, name, headshot_url, birth_date, trade_mark)\r\nVALUES (0000233,\r\n         'Quentin Tarantino',\r\n         'https://m.media-amazon.com/images/M/MV5BMTgyMjI3ODA3Nl5BMl5BanBnXkFtZTcwNzY2MDYxOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg',\r\n         '1963-03-27',\r\n         ['Lead characters usually drive General Motors vehicles, particularly Chevrolet and Cadillac, such as Jules 1974 Nova and Vincents 1960s Malibu.',\r\n          'Briefcases and suitcases play an important role in Pulp Fiction (1994), Reservoir Dogs (1992), Jackie Brown (1997), True Romance (1993) and Kill Bill: Vol. 2 (2004).',\r\n          'Makes references to cult movies and television',\r\n          'Frequently works with Harvey Keitel, Tim Roth, Michael Madsen, Uma Thurman, Michael Bowen, Samuel L. Jackson, Michael Parks and Christoph Waltz.',\r\n          'His films usually have a shot from inside an automobile trunk',\r\n          'He always has a Dutch element in his films: The opening tune, Little Green Bag, in Reservoir Dogs (1992) was performed by George Baker Selection and written by Jan Gerbrand Visser and Benjamino Bouwens who are all Dutch. The character Freddy Newandyke, played by Tim Roth is a direct translation to a typical Dutch last name, Nieuwendijk. The code name of Tim Roth is Mr. Orange, the royal color of Holland and the last name of the royal family. The Amsterdam conversation in Pulp Fiction (1994), Vincent Vega smokes from a Dutch tobacco shag (Drum), the mentioning of Rutger Hauer in Jackie Brown (1997), the brides name is Beatrix, the name of the Royal Dutch Queen.',\r\n\t\t  '[The Mexican Standoff] All his movies (including True Romance (1993), which he only wrote and did not direct) feature a scene in which three or more characters are pointing guns at each other at the same time.',\r\n         'Often uses an unconventional storytelling device in his films, such as retrospect (Reservoir Dogs (1992)), non-linear (Pulp Fiction (1994)), or &quot;chapter&quot; format (Kill Bill: Vol. 1 (2003)).',\r\n         'His films will often include one long, unbroken take where a character is  followed around somewhere.']);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "movie_id": "string",
+                      "title": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110435824_349085337",
+      "id": "paragraph_1744110435824_349085337",
+      "dateCreated": "2025-04-08T11:07:15+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16725",
+      "text": "SELECT movie_id, title\r\nFROM movies.movie;",
+      "dateUpdated": "2025-04-08T11:08:41+0000",
+      "dateFinished": "2025-04-08T11:08:41+0000",
+      "dateStarted": "2025-04-08T11:08:41+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "movie_id\ttitle\n111257\tSpeed\n133093\tThe Matrix\n110912\tPulp Fiction\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "actor_id": "string",
+                      "birth_date": "string",
+                      "headshot_url": "string",
+                      "mini_biography": "string",
+                      "name": "string",
+                      "trade_mark": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110521278_1968516680",
+      "id": "paragraph_1744110521278_1968516680",
+      "dateCreated": "2025-04-08T11:08:41+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:16806",
+      "text": "SELECT *\r\nFROM movies.actor;",
+      "dateUpdated": "2025-04-08T11:10:46+0000",
+      "dateFinished": "2025-04-08T11:10:46+0000",
+      "dateStarted": "2025-04-08T11:10:46+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "actor_id\tbirth_date\theadshot_url\tmini_biography\tname\ttrade_mark\n237\t1954-02-18\thttps://m.media-amazon.com/images/M/MV5BMTUwNjQ0ODkxN15BMl5BanBnXkFtZTcwMDc5NjQwNw@@._V1_UY98_CR3,0,67,98_AL_.jpg\tnull\tJohn Travolta\t[Cleft chin and razor-sharp cheekbones, Often works some sort of dance into his roles, New Jersey accent, Black hair and blue eyes]\n113\t1964-07-26\thttps://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UX67_CR0,0,67,98_AL_.jpg\tnull\tSandra Bullock\tnull\n233\t1963-03-27\thttps://m.media-amazon.com/images/M/MV5BMTgyMjI3ODA3Nl5BMl5BanBnXkFtZTcwNzY2MDYxOQ@@._V1_UX67_CR0,0,67,98_AL_.jpg\tnull\tQuentin Tarantino\t[Lead characters usually drive General Motors vehicles, particularly Chevrolet and Cadillac, such as Jules 1974 Nova and Vincents 1960s Malibu., Briefcases and suitcases play an important role in Pulp Fiction (1994), Reservoir Dogs (1992), Jackie Brown (1997), True Romance (1993) and Kill Bill: Vol. 2 (2004)., Makes references to cult movies and television, Frequently works with Harvey Keitel, Tim Roth, Michael Madsen, Uma Thurman, Michael Bowen, Samuel L. Jackson, Michael Parks and Christoph Waltz., His films usually have a shot from inside an automobile trunk, He always has a Dutch element in his films: The opening tune, Little Green Bag, in Reservoir Dogs (1992) was performed by George Baker Selection and written by Jan Gerbrand Visser and Benjamino Bouwens who are all Dutch. The character Freddy Newandyke, played by Tim Roth is a direct translation to a typical Dutch last name, Nieuwendijk. The code name of Tim Roth is Mr. Orange, the royal color of Holland and the last name of the royal family. The Amsterdam conversation in Pulp Fiction (1994), Vincent Vega smokes from a Dutch tobacco shag (Drum), the mentioning of Rutger Hauer in Jackie Brown (1997), the brides name is Beatrix, the name of the Royal Dutch Queen., [The Mexican Standoff] All his movies (including True Romance (1993), which he only wrote and did not direct) feature a scene in which three or more characters are pointing guns at each other at the same time., Often uses an unconventional storytelling device in his films, such as retrospect (Reservoir Dogs (1992)), non-linear (Pulp Fiction (1994)), or \"chapter\" format (Kill Bill: Vol. 1 (2003))., His films will often include one long, unbroken take where a character is  followed around somewhere.]\n168\t1948-12-21\thttps://m.media-amazon.com/images/M/MV5BMTQ1NTQwMTYxNl5BMl5BanBnXkFtZTYwMjA1MzY1._V1_UX67_CR0,0,67,98_AL_.jpg\tnull\tSamuel L. Jackson\t[Deep authoritative voice, Rebellious characters who are disliked or considered strange by others in the story, Often plays police officers or government officials. Both prone to intimidation or violence, Often plays very wise and intelligent characters with great capacities for violence, Frequently plays tough characters who swear a lot, Frequent swearing, Often sports a moustache or goatee in his films, Shaven head, Kangol hats, Often plays hotheaded characters with a fiery temper, Often shouts the word \"motherf*****\" at some point in a film, Frequently cast by Quentin Tarantino]\n235\t1970-04-29\thttps://m.media-amazon.com/images/M/MV5BMjMxNzk1MTQyMl5BMl5BanBnXkFtZTgwMDIzMDEyMTE@._V1_UX67_CR0,0,67,98_AL_.jpg\tnull\tUma Thurman\t[Long blond hair and blue eyes, Statuesque, model-like figure]\n206\t1964-09-02\thttps://m.media-amazon.com/images/M/MV5BNjUxNDcwMTg4Ml5BMl5BanBnXkFtZTcwMjU4NDYyOA@@._V1_UY98_CR4,0,67,98_AL_.jpg\tnull\tKeanu Reeves\t[Intense contemplative gaze, Deep husky voice, Known for playing stoic reserved characters]\n246\t1955-03-19\thttps://m.media-amazon.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_UY98_CR8,0,67,98_AL_.jpg\tnull\tBruce Willis\t[Frequently plays a man who suffered a tragedy, had lost something or had a  crisis of confidence or conscience., Frequently plays likeable wisecracking heroes with a moral centre, Headlines action-adventures, often playing a policeman, hitman or someone in the military, Often plays men who get caught up in situations far beyond their control, Sardonic one-liners, Shaven head, Distinctive, gravelly voice, Smirky grin., Known for playing cynical anti-heroes with unhappy personal lives]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110646554_313471956",
+      "id": "paragraph_1744110646554_313471956",
+      "dateCreated": "2025-04-08T11:10:46+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:17275",
+      "text": "UPDATE movies.actor\r\nSET name = 'Bruce Walter Willis'\r\nWHERE actor_id = 0000246;",
+      "dateUpdated": "2025-04-08T11:12:14+0000",
+      "dateFinished": "2025-04-08T11:12:14+0000",
+      "dateStarted": "2025-04-08T11:12:14+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#6fca8a32-73f2-41b3-9c1e-59fa168b0faf\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"6fca8a32-73f2-41b3-9c1e-59fa168b0faf\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">UPDATE movies.actor\r\nSET name = 'Bruce Walter Willis'\r\nWHERE actor_id = 0000246;</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "actor_id": "string",
+                      "birth_date": "string",
+                      "headshot_url": "string",
+                      "mini_biography": "string",
+                      "name": "string",
+                      "trade_mark": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110734438_564917204",
+      "id": "paragraph_1744110734438_564917204",
+      "dateCreated": "2025-04-08T11:12:14+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:18149",
+      "text": "SELECT *\r\nFROM movies.actor\r\nWHERE actor_id = 0000246;",
+      "dateUpdated": "2025-04-08T11:13:04+0000",
+      "dateFinished": "2025-04-08T11:13:03+0000",
+      "dateStarted": "2025-04-08T11:13:03+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "actor_id\tbirth_date\theadshot_url\tmini_biography\tname\ttrade_mark\n246\t1955-03-19\thttps://m.media-amazon.com/images/M/MV5BMjA0MjMzMTE5OF5BMl5BanBnXkFtZTcwMzQ2ODE3Mw@@._V1_UY98_CR8,0,67,98_AL_.jpg\tnull\tBruce Walter Willis\t[Frequently plays a man who suffered a tragedy, had lost something or had a  crisis of confidence or conscience., Frequently plays likeable wisecracking heroes with a moral centre, Headlines action-adventures, often playing a policeman, hitman or someone in the military, Often plays men who get caught up in situations far beyond their control, Sardonic one-liners, Shaven head, Distinctive, gravelly voice, Smirky grin., Known for playing cynical anti-heroes with unhappy personal lives]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110783818_1334582005",
+      "id": "paragraph_1744110783818_1334582005",
+      "dateCreated": "2025-04-08T11:13:03+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:18230",
+      "text": "DROP TABLE IF EXISTS movies.movies_by_actor;\r\nCREATE TABLE movies.movies_by_actor (actor_id int,\r\n\t\t\t\tmovie_id int,  \r\n\t\t\t\ttitle text,\r\n\t\t\t\tPRIMARY KEY (actor_id, movie_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:16:05+0000",
+      "dateFinished": "2025-04-08T11:16:06+0000",
+      "dateStarted": "2025-04-08T11:16:05+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#9a13df84-9f1f-42f8-845b-137ffe2bc8c3\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"9a13df84-9f1f-42f8-845b-137ffe2bc8c3\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.movies_by_actor (actor_id int,\r\n\t\t\t\tmovie_id int,  \r\n\t\t\t\ttitle text,\r\n\t\t\t\tPRIMARY KEY (actor_id, movie_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110965382_1114201207",
+      "id": "paragraph_1744110965382_1114201207",
+      "dateCreated": "2025-04-08T11:16:05+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:18906",
+      "text": "DROP TABLE IF EXISTS movies.actors_by_movie;\r\nCREATE TABLE movies.actors_by_movie (movie_id int,\r\n             title text STATIC,\r\n\t\t\t\tactor_id int,  \r\n\t\t\t\tname text,\r\n\t\t\t\tPRIMARY KEY (movie_id, actor_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:16:25+0000",
+      "dateFinished": "2025-04-08T11:16:26+0000",
+      "dateStarted": "2025-04-08T11:16:25+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#a089d4e2-b7bd-4a46-9477-fd57111d7ba8\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"a089d4e2-b7bd-4a46-9477-fd57111d7ba8\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.actors_by_movie (movie_id int,\r\n             title text STATIC,\r\n\t\t\t\tactor_id int,  \r\n\t\t\t\tname text,\r\n\t\t\t\tPRIMARY KEY (movie_id, actor_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744110985604_342620742",
+      "id": "paragraph_1744110985604_342620742",
+      "dateCreated": "2025-04-08T11:16:25+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:18996",
+      "text": "// Фильмы для актера \"Bruce Willis\"\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000246, 0110912, 'Pulp Fiction');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000246, 1606378, 'A Good Day to Die Hard');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000246, 0217869, 'Unbreakable');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000246, 0377917, 'The Fifth Element');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000246, 0112864, 'Die Hard: With a Vengeance');\r\n\r\n// Фильмы для актера \"Keanu Reeves\"\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000206, 0133093, 'The Matrix');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000206, 0234215, 'The Matrix Reloaded');\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000206, 0111257, 'Speed');\r\n\r\n\r\n// Фильмы для актера \"Sandra Bullock\"\r\n\r\nINSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000113, 0111257, 'Speed');",
+      "dateUpdated": "2025-04-08T11:17:34+0000",
+      "dateFinished": "2025-04-08T11:17:34+0000",
+      "dateStarted": "2025-04-08T11:17:34+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#868cd246-9f99-4bba-8731-abc0f687a31d\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"868cd246-9f99-4bba-8731-abc0f687a31d\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">INSERT INTO movies.movies_by_actor (actor_id, movie_id, title)\r\nVALUES (0000113, 0111257, 'Speed');</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111054551_930587052",
+      "id": "paragraph_1744111054551_930587052",
+      "dateCreated": "2025-04-08T11:17:34+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19086",
+      "text": "// Актеры для фильма \"The Matrix\"\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0133093, 'The Matrix', 0000206, 'Keanu Reeves');\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0133093, 'The Matrix', 0000401, 'Laurence Fishburne');\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0133093, 'The Matrix', 0005251, 'Carrie-Anne Moss');\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0133093, 'The Matrix', 0915989, 'Hugo Weaving');\r\n\r\n\r\n// Актеры для фильма \"Pulp Fiction\"\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0110912, 'Pulp Fiction', 0000237, 'John Travolta');\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0110912, 'Pulp Fiction', 0000168, 'Samuel L. Jackson');\r\n\r\nINSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0110912, 'Pulp Fiction', 0000246, 'Bruce Willis');",
+      "dateUpdated": "2025-04-08T11:17:57+0000",
+      "dateFinished": "2025-04-08T11:17:57+0000",
+      "dateStarted": "2025-04-08T11:17:57+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#520a9f10-2fa2-4332-904f-0262381a2be8\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"520a9f10-2fa2-4332-904f-0262381a2be8\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">INSERT INTO movies.actors_by_movie (movie_id, title, actor_id, name)\r\nVALUES (0110912, 'Pulp Fiction', 0000246, 'Bruce Willis');</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "title": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111077605_1586831939",
+      "id": "paragraph_1744111077605_1586831939",
+      "dateCreated": "2025-04-08T11:17:57+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19167",
+      "text": "SELECT title\r\nFROM movies.movies_by_actor\r\nWHERE actor_id = 0000246;",
+      "dateUpdated": "2025-04-08T11:18:42+0000",
+      "dateFinished": "2025-04-08T11:18:41+0000",
+      "dateStarted": "2025-04-08T11:18:41+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "title\nPulp Fiction\nDie Hard: With a Vengeance\nUnbreakable\nThe Fifth Element\nA Good Day to Die Hard\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111121734_2109260627",
+      "id": "paragraph_1744111121734_2109260627",
+      "dateCreated": "2025-04-08T11:18:41+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19248",
+      "text": "SELECT name, title\r\nFROM movies.actors_by_movie\r\nWHERE movie_id = 0110912;",
+      "dateUpdated": "2025-04-08T11:19:39+0000",
+      "dateFinished": "2025-04-08T11:19:39+0000",
+      "dateStarted": "2025-04-08T11:19:39+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "name\ttitle\nSamuel L. Jackson\tPulp Fiction\nJohn Travolta\tPulp Fiction\nBruce Willis\tPulp Fiction\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111179834_973430842",
+      "id": "paragraph_1744111179834_973430842",
+      "dateCreated": "2025-04-08T11:19:39+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:19671",
+      "text": "DROP TABLE IF EXISTS movies.rating_by_movie;\r\nCREATE TABLE movies.rating_by_movie (movie_id int,\r\n             one_star counter,  \r\n             two_star counter,  \r\n             three_star counter,  \r\n             four_star counter,  \r\n             five_star counter,\r\n\t\t\t\tPRIMARY KEY (movie_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:20:35+0000",
+      "dateFinished": "2025-04-08T11:20:36+0000",
+      "dateStarted": "2025-04-08T11:20:35+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#615b9cd8-5793-4eb6-808a-0943ecb4c0c1\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"615b9cd8-5793-4eb6-808a-0943ecb4c0c1\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.rating_by_movie (movie_id int,\r\n             one_star counter,  \r\n             two_star counter,  \r\n             three_star counter,  \r\n             four_star counter,  \r\n             five_star counter,\r\n\t\t\t\tPRIMARY KEY (movie_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111235136_2089058323",
+      "id": "paragraph_1744111235136_2089058323",
+      "dateCreated": "2025-04-08T11:20:35+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:20140",
+      "text": "UPDATE movies.rating_by_movie\r\nSET five_star = five_star + 1\r\nWHERE movie_id = 0110912;\r\n\r\nUPDATE movies.rating_by_movie\r\nSET four_star = four_star + 1\r\nWHERE movie_id = 0110912;\r\n\r\nUPDATE movies.rating_by_movie\r\nSET five_star = five_star + 1\r\nWHERE movie_id = 0110912;\r\n\r\nUPDATE movies.rating_by_movie\r\nSET five_star = five_star + 1\r\nWHERE movie_id = 0110912;\r\n\r\nUPDATE movies.rating_by_movie\r\nSET two_star = two_star + 1\r\nWHERE movie_id = 0110912;",
+      "dateUpdated": "2025-04-08T11:24:33+0000",
+      "dateFinished": "2025-04-08T11:24:33+0000",
+      "dateStarted": "2025-04-08T11:24:33+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#e8af4ff3-129b-4772-9ea6-a129c03b58b4\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"e8af4ff3-129b-4772-9ea6-a129c03b58b4\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">UPDATE movies.rating_by_movie\r\nSET two_star = two_star + 1\r\nWHERE movie_id = 0110912;</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "movie_id": "string",
+                      "five_star": "string",
+                      "four_star": "string",
+                      "one_star": "string",
+                      "three_star": "string",
+                      "two_star": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111473270_1669392295",
+      "id": "paragraph_1744111473270_1669392295",
+      "dateCreated": "2025-04-08T11:24:33+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:20230",
+      "text": "SELECT * FROM movies.rating_by_movie WHERE movie_id = 0110912;",
+      "dateUpdated": "2025-04-08T11:24:46+0000",
+      "dateFinished": "2025-04-08T11:24:45+0000",
+      "dateStarted": "2025-04-08T11:24:45+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "movie_id\tfive_star\tfour_star\tone_star\tthree_star\ttwo_star\n110912\t3\t1\tnull\tnull\t1\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111485834_794620472",
+      "id": "paragraph_1744111485834_794620472",
+      "dateCreated": "2025-04-08T11:24:45+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:20311",
+      "text": "DROP TABLE IF EXISTS movies.movie_viewed_by_time;\r\nCREATE TABLE movies.movie_viewed_by_time (movie_id int,\r\n\t\t\t   year int,\r\n\t\t\t   month int,\r\n             male counter,\r\n             female counter,\r\n\t\t\t\tPRIMARY KEY (movie_id, year, month)\r\n) WITH CLUSTERING ORDER BY (year DESC, month DESC);\r\n",
+      "dateUpdated": "2025-04-08T11:25:12+0000",
+      "dateFinished": "2025-04-08T11:25:14+0000",
+      "dateStarted": "2025-04-08T11:25:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#8a7f3135-d906-4ac0-afc2-ab9ac08f7c82\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"8a7f3135-d906-4ac0-afc2-ab9ac08f7c82\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE movies.movie_viewed_by_time (movie_id int,\r\n\t\t\t   year int,\r\n\t\t\t   month int,\r\n             male counter,\r\n             female counter,\r\n\t\t\t\tPRIMARY KEY (movie_id, year, month)\r\n) WITH CLUSTERING ORDER BY (year DESC, month DESC);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111512926_192637283",
+      "id": "paragraph_1744111512926_192637283",
+      "dateCreated": "2025-04-08T11:25:12+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:20987",
+      "text": "// Pulp Fiction Views 2019/03\r\nUPDATE movies.movie_viewed_by_time\r\nSET male = male + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 03;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET male = male + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 03;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 03;\r\n\r\n// Pulp Fiction Views 2019/04\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 04;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET male = male + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 04;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 04;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 04;\r\n\r\n// Pulp Fiction Views 2019/05\r\nUPDATE movies.movie_viewed_by_time\r\nSET male = male + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 05;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET male = male + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 05;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 05;\r\n\r\nUPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 05;",
+      "dateUpdated": "2025-04-08T11:25:38+0000",
+      "dateFinished": "2025-04-08T11:25:38+0000",
+      "dateStarted": "2025-04-08T11:25:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#4ba135f8-b998-4e3e-ba00-767f1044c516\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"4ba135f8-b998-4e3e-ba00-767f1044c516\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">UPDATE movies.movie_viewed_by_time\r\nSET female = female + 1\r\nWHERE movie_id = 0110912 AND year = 2019 and month = 05;</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "movie_id": "string",
+                      "year": "string",
+                      "month": "string",
+                      "female": "string",
+                      "male": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111538120_2054050863",
+      "id": "paragraph_1744111538120_2054050863",
+      "dateCreated": "2025-04-08T11:25:38+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:21077",
+      "text": "SELECT *\r\nFROM movies.movie_viewed_by_time\r\nWHERE movie_id = 0110912;",
+      "dateUpdated": "2025-04-08T11:26:05+0000",
+      "dateFinished": "2025-04-08T11:26:04+0000",
+      "dateStarted": "2025-04-08T11:26:04+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "movie_id\tyear\tmonth\tfemale\tmale\n110912\t2019\t5\t2\t2\n110912\t2019\t4\t3\t1\n110912\t2019\t3\t1\t2\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "movie_id": "string",
+                      "year": "string",
+                      "month": "string",
+                      "female": "string",
+                      "male": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111564684_478116332",
+      "id": "paragraph_1744111564684_478116332",
+      "dateCreated": "2025-04-08T11:26:04+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:21158",
+      "text": "SELECT *\r\nFROM movies.movie_viewed_by_time\r\nWHERE movie_id = 0110912 AND year = 2019 AND month = 05;",
+      "dateUpdated": "2025-04-08T11:26:20+0000",
+      "dateFinished": "2025-04-08T11:26:19+0000",
+      "dateStarted": "2025-04-08T11:26:19+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "movie_id\tyear\tmonth\tfemale\tmale\n110912\t2019\t5\t2\t2\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "movie_id": "string",
+                      "year": "string",
+                      "month": "string",
+                      "female": "string",
+                      "male": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111579770_1227875221",
+      "id": "paragraph_1744111579770_1227875221",
+      "dateCreated": "2025-04-08T11:26:19+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:21837",
+      "text": "SELECT *\r\nFROM movies.movie_viewed_by_time\r\nWHERE movie_id = 0110912 AND year = 2019 AND month >= 01 AND month <= 5;",
+      "dateUpdated": "2025-04-08T11:26:38+0000",
+      "dateFinished": "2025-04-08T11:26:38+0000",
+      "dateStarted": "2025-04-08T11:26:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "movie_id\tyear\tmonth\tfemale\tmale\n110912\t2019\t5\t2\t2\n110912\t2019\t4\t3\t1\n110912\t2019\t3\t1\t2\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111598175_1006125903",
+      "id": "paragraph_1744111598175_1006125903",
+      "dateCreated": "2025-04-08T11:26:38+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:22452",
+      "text": "//Индивидуальное задание. Вариант 13",
+      "dateUpdated": "2025-04-08T11:28:22+0000"
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111702310_643288346",
+      "id": "paragraph_1744111702310_643288346",
+      "dateCreated": "2025-04-08T11:28:22+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23173",
+      "text": "CREATE KEYSPACE library WITH replication =\r\n  {'class':'SimpleStrategy','replication_factor':1};\r\nDESCRIBE KEYSPACE library;\r\n",
+      "dateUpdated": "2025-04-08T11:30:04+0000",
+      "dateFinished": "2025-04-08T11:30:05+0000",
+      "dateStarted": "2025-04-08T11:30:04+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n<br/>\n<br/>\n<nav class=\"navbar navbar-default\">\n    <ul class=\"nav navbar-nav\">\n        \n\n<li role=\"presentation\" class=\"dropdown\">\n    <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n        <span class=\"text-danger\"><span class=\"glyphicon glyphicon-folder-open\"></span>&nbsp;&nbsp;<strong>library</strong></span>\n        <span class=\"text-danger caret\"></span>\n        <ul class=\"dropdown-menu\">\n            \n            \n            \n            \n                    </ul>\n    </a>\n</li>\n        <li>\n            <a><strong>DESCRIBE KEYSPACE library;</strong></a>\n        </li>\n    </ul>\n    <ul class=\"nav navbar-nav navbar-right\">\n        <li class=\"dropdown\">\n            <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                <strong>Legend</strong>\n                <span class=\"caret\"></span>\n            </a>\n            <ul class=\"dropdown-menu\">\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-dashboard text-muted\" aria-hidden=\"true\" ></span>&nbsp;Cluster\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-folder-open text-danger\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Keyspace\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-copyright-mark text-warning\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;UDT\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-th-list text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Table\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-eye-open text-primary\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Materialized View\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-random text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Function\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-retweet text-success\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Aggregate\n                    </a>\n                </li>\n                <li role=\"separator\" class=\"divider text-muted\"></li>\n                <li class=\"dropdown-header\"><span class=\"text-primary\">Table icons</span></li>\n                <li class=\"bg-info\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-fullscreen\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Partition Key\n                    </a>\n                </li>\n                <li class=\"bg-warning\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-pushpin\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Static Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Column\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order ASC\n                    </a>\n                </li>\n                <li class=\"bg-success\">\n                    <a href=\"#\">\n                        <span class=\"glyphicon glyphicon-sort-by-attributes-alt\" aria-hidden=\"true\" ></span>&nbsp;&nbsp;Clustering Order DESC\n                    </a>\n                </li>\n            </ul>\n        </li>\n        <li>\n            <a href=\"#\"></a>\n        </li>\n    </ul>\n</nav>\n<hr/>\n\n<div class=\"container\">\n    <!-- Keyspace -->\n    \n\n\n<div class=\"row\">\n    <div class=\"col-md-2\"></div>\n    <div class=\"col-md-8 col-offset-md-2\">\n        <div class=\"panel panel-default table-responsive table-bordered\">\n            <table class=\"table\">\n                \n                <caption>\n                    <h4 class=\"text-danger\">\n                        <span class=\"glyphicon glyphicon-folder-open\"></span>&nbsp;&nbsp;library\n                    </h4>\n                </caption>\n                                <thead>\n                <tr>\n                    <th class=\"col-md-10\" style=\"text-align:left\">Replication</th>\n                    <th class=\"col-md-2\" style=\"text-align:left\">Durable Writes</th>\n                </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td class=\"col-md-10\" style=\"text-align:left\">{'class' : 'org.apache.cassandra.locator.SimpleStrategy', 'replication_factor' : '1'}</td>\n                        <td class=\"col-md-2\" style=\"text-align:left\">true</td>\n                    </tr>\n                <tbody>\n            </table>\n            <div class=\"panel-footer\">\n                <a data-toggle=\"collapse\" data-target=\"#d16d4c70-146c-11f0-a67f-2903bc18f558_asCQL\" class=\"text-danger\">\n                    <strong>As CQL statement</strong>\n                    <span class=\"caret\"></span>\n                </a>\n                <br/><br/>\n                <div class=\"collapse\" id=\"d16d4c70-146c-11f0-a67f-2903bc18f558_asCQL\">\n                    <pre class=\"well\">CREATE KEYSPACE library WITH replication = { \n\t'class' : 'org.apache.cassandra.locator.SimpleStrategy', \n\t'replication_factor': '1' } AND durable_writes = true;</pre>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"col-md-2\"></div>\n</div>\n\n    <!-- Tables -->\n    <div class=\"row\"></div>\n    \n    \n    \n    \n    \n</div>"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744111804008_2086724960",
+      "id": "paragraph_1744111804008_2086724960",
+      "dateCreated": "2025-04-08T11:30:04+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23242",
+      "text": "DROP TABLE IF EXISTS library.books;\r\nCREATE TABLE library.books (\r\n    book_id int,\r\n    title text,\r\n    author text,\r\n    year_published int,\r\n    genre text,\r\n    isbn text,\r\n    PRIMARY KEY (book_id)\r\n);",
+      "dateUpdated": "2025-04-08T11:59:38+0000",
+      "dateFinished": "2025-04-08T11:59:39+0000",
+      "dateStarted": "2025-04-08T11:59:38+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#8fc4c3eb-e610-4d02-97fc-1913bc98be02\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"8fc4c3eb-e610-4d02-97fc-1913bc98be02\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">CREATE TABLE library.books (\r\n    book_id int,\r\n    title text,\r\n    author text,\r\n    year_published int,\r\n    genre text,\r\n    isbn text,\r\n    PRIMARY KEY (book_id)\r\n);</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744113578271_537041779",
+      "id": "paragraph_1744113578271_537041779",
+      "dateCreated": "2025-04-08T11:59:38+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23332",
+      "text": "-- Классика\r\nINSERT INTO library.books (book_id, title, author, year_published, genre, isbn)\r\nVALUES (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 'Classic', '978-0061120084');\r\n\r\n-- Фантастика\r\nINSERT INTO library.books (book_id, title, author, year_published, genre, isbn)\r\nVALUES (2, 'Dune', 'Frank Herbert', 1965, 'Science Fiction', '978-0441172719');\r\n\r\n-- Программирование\r\nINSERT INTO library.books (book_id, title, author, year_published, genre, isbn)\r\nVALUES (3, 'Clean Code', 'Robert C. Martin', 2008, 'Programming', '978-0132350884');\r\n\r\n-- Детектив\r\nINSERT INTO library.books (book_id, title, author, year_published, genre, isbn)\r\nVALUES (4, 'The Girl with the Dragon Tattoo', 'Stieg Larsson', 2005, 'Mystery', '978-0307269751');\r\n",
+      "dateUpdated": "2025-04-08T12:01:02+0000",
+      "dateFinished": "2025-04-08T12:01:02+0000",
+      "dateStarted": "2025-04-08T12:01:02+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#afbcf281-c089-4a5a-b964-dffeb44e11c7\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"afbcf281-c089-4a5a-b964-dffeb44e11c7\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">INSERT INTO library.books (book_id, title, author, year_published, genre, isbn)\r\nVALUES (4, 'The Girl with the Dragon Tattoo', 'Stieg Larsson', 2005, 'Mystery', '978-0307269751');</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "book_id": "string",
+                      "author": "string",
+                      "genre": "string",
+                      "isbn": "string",
+                      "title": "string",
+                      "year_published": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744113662860_1446691828",
+      "id": "paragraph_1744113662860_1446691828",
+      "dateCreated": "2025-04-08T12:01:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23422",
+      "text": "SELECT * FROM library.books;",
+      "dateUpdated": "2025-04-08T12:01:35+0000",
+      "dateFinished": "2025-04-08T12:01:35+0000",
+      "dateStarted": "2025-04-08T12:01:35+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "book_id\tauthor\tgenre\tisbn\ttitle\tyear_published\n1\tHarper Lee\tClassic\t978-0061120084\tTo Kill a Mockingbird\t1960\n2\tFrank Herbert\tScience Fiction\t978-0441172719\tDune\t1965\n4\tStieg Larsson\tMystery\t978-0307269751\tThe Girl with the Dragon Tattoo\t2005\n3\tRobert C. Martin\tProgramming\t978-0132350884\tClean Code\t2008\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744113695086_805269466",
+      "id": "paragraph_1744113695086_805269466",
+      "dateCreated": "2025-04-08T12:01:35+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:23503",
+      "text": "UPDATE library.books \r\nSET year_published = 1950 \r\nWHERE book_id = 2;",
+      "dateUpdated": "2025-04-08T12:02:59+0000",
+      "dateFinished": "2025-04-08T12:02:59+0000",
+      "dateStarted": "2025-04-08T12:02:59+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\n\n\n\n\n\n<div class=\"container\">\n<div class=\"row\">\n  <h5>No Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <a role=\"button\" data-toggle=\"collapse\" data-target=\"#c4176e1b-000b-494c-bd77-0cceab37b500\" aria-expanded=\"false\">\n      <span class=\"text-info\"><strong>Last query execution info</strong></span>\n    </a>\n  </h5>\n</div>\n<div class=\"panel panel-default\">\n  <div id=\"c4176e1b-000b-494c-bd77-0cceab37b500\" class=\"panel-collapse collapse\" role=\"tabpanel\">\n    <div class=\"panel-body\">\n      <div class=\"row\">\n        <div class=\"col-md-3\"></div>\n        <div class=\"col-md-6 col-offset-md-3 table-responsive table-bordered\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>Information</th>\n                <th style=\"text-align:left\">Value</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>Statement</td>\n                <td style=\"text-align:left\">UPDATE library.books \r\nSET year_published = 1950 \r\nWHERE book_id = 2;</td>\n              </tr>\n              <tr>\n                <td>Tried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Queried Hosts</td>\n                <td style=\"text-align:left\">cassandra-1:9042</td>\n              </tr>\n              <tr>\n                <td>Schema in Agreement</td>\n                <td style=\"text-align:left\">true</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/undefined",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "title": "string",
+                      "author": "string",
+                      "year_published": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744113779340_1054272402",
+      "id": "paragraph_1744113779340_1054272402",
+      "dateCreated": "2025-04-08T12:02:59+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:24278",
+      "text": "SELECT title, author, year_published \r\nFROM library.books \r\nWHERE book_id = 2;",
+      "dateUpdated": "2025-04-08T12:03:54+0000",
+      "dateFinished": "2025-04-08T12:03:54+0000",
+      "dateStarted": "2025-04-08T12:03:54+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "title\tauthor\tyear_published\nDune\tFrank Herbert\t1950\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/undefined"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1744113787556_932509438",
+      "id": "paragraph_1744113787556_932509438",
+      "dateCreated": "2025-04-08T12:03:07+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:24365"
+    }
+  ],
+  "name": "Cassandra",
+  "id": "2KTF5Y2ZE",
+  "defaultInterpreterGroup": "cassandra",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Cassandra"
+}
